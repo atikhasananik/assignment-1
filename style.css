@@ -1,6 +1,149 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Inter", "Arimo", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* navbar style start here */
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+
+.logoImgCon {
+  width: 110px;
+}
+
+.logoImgCon img {
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 1.3rem;
+  font-size: 1rem;
+  color: #575757;
+  font-weight: 500;
+}
+header nav ul li {
+  font-family:
+    "Arimo", "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s linear;
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid transparent;
+}
+
+header nav ul li:hover {
+  color: #444;
+  border-bottom: 1px solid #444;
+}
+
+.commonBtn {
+  padding: 10px 16px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #1d4ed8;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.commonBtn:hover {
+  background-color: #2563eb;
+  cursor: pointer;
+}
+/* navbar style end here */
+
+/* heroSection style start here */
+.heroSection {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e3d9a;
+}
+
+.heroSection .hero {
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 35%;
+  position: relative;
+}
+
+.heroSection .hero .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.heroSection .hero .heroContent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 60%;
+  gap: 15vw;
+}
+
+.heroSection .hero .heroContent div h1 {
+  font-size: 5vw;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.heroSection .hero .heroContent div p {
+  font-size: 22px;
+  color: #ffffff;
+  line-height: normal;
+  max-width: 80%;
+  margin: auto;
+}
+
+.heroBtn {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+}
+/* heroSection style end here */
