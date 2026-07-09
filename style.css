@@ -4,10 +4,11 @@
   box-sizing: border-box;
   font-family:
     "Inter", "Arimo", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #0D1B2A;
 }
 html {
   scroll-behavior: smooth;
-  
+
 }
 
 html,
@@ -16,6 +17,10 @@ body {
   width: 100%;
 }
 
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .alingCenter {
   width: 85%;
   margin: 0 auto;
@@ -143,6 +148,10 @@ header nav ul li:hover {
   margin-bottom: 2rem;
 }
 
+em{
+    color: #1D4ED8;
+}
+
 .heroSection .hero .heroContent div p {
   font-size: 22px;
   color: #ffffff;
@@ -163,7 +172,7 @@ header nav ul li:hover {
 /* meetSection style start here  */
 
 .meetSecton {
-  padding-top: 4vw;
+  padding-top: 7vw;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -183,7 +192,7 @@ header nav ul li:hover {
 }
 .meetSecton .meetCard {
   
-  min-width: 500px;
+  min-width: 300px;
   border: 1px solid rgba(128, 128, 128, 0.216);
   border-radius: 8px;
   overflow: hidden;
@@ -222,3 +231,96 @@ header nav ul li:hover {
     line-height: 1.5rem;
 }
 /* meetSection style end here  */
+
+
+/* pricingSection style start here */
+.pricing{
+    padding-top: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    
+}
+
+.pricing h2{
+    font-size: 3vw;
+    font-weight: bold;
+    color: #0D1B2A;
+    text-align: center;
+    margin-bottom: .5rem;
+   
+}
+
+.pricing > div > p{
+    font-size: 1rem;
+    color: #575757;
+    text-align: center;
+    
+}
+.pricingCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1.5rem;
+}
+.pricingCard{
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #33333328;
+  min-width: 350px;
+  
+  transition: all .2s linear;
+}
+.pricingCard:hover{
+    border: 1px solid transparent;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #3333332b;
+}
+.pricingCard .pricingCardInfo{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.352);
+}
+.pricingCard .pricingCardInfo p{
+    font-size: 13px;
+    color: #888888;
+    font-weight: 600;
+    margin: 8px 0;
+
+}
+
+.pricingCard .pricingCardInfo h3{
+    font-size: 3rem;
+    color: #0D1B2A;
+    font-weight: 600;
+    margin: 4px 0;
+}
+
+.pricingCards ul{
+    list-style-position: inside;
+    margin: 1.5rem 0;
+    
+}
+
+.pricingCards ul li{
+    font-size: 14px;
+    color: #333333;
+    margin: 1rem 0;
+}
+
+.pricingCards ul li::marker{
+    color: #1D4ED8;
+}
+
+.pricingCard button{
+    background-color: transparent;
+    border:1px solid #2563EB;
+    color: #2563EB;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.pricingCard button:hover{
+    background-color: transparent;
+}
+/* pricingSection style end here */
